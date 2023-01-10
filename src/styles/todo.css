@@ -1,0 +1,30 @@
+.todo-contents {
+  padding: 0 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  display: flex;
+}
+
+.todo-contents p {
+  font-size: 30px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.todo-contents label p {
+  overflow-wrap: anywhere;
+  margin-left: 10px;
+}
+
+@media (max-width: 700px) {
+  .todo-contents {
+    padding: 0 40px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+}

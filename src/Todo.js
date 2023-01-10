@@ -1,4 +1,5 @@
 import React from "react";
+import "../src/styles/todo.css";
 
 const Todo = ({ todo, toggleTodo }) => {
   const handleTodoClick = () => {
@@ -6,7 +7,7 @@ const Todo = ({ todo, toggleTodo }) => {
   };
 
   return (
-    <div>
+    <div className="todo-contents">
       <label>
         <input
           type="checkbox"
@@ -14,8 +15,8 @@ const Todo = ({ todo, toggleTodo }) => {
           readOnly
           onChange={handleTodoClick}
         />
+        <p>{todo.name}</p>
       </label>
-      {todo.name}
     </div>
   );
 };
